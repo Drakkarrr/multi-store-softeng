@@ -1,0 +1,113 @@
+/* Menu container */
+.tree
+{
+	width:100%;
+}
+
+/* Menu styles */
+.tree ul
+{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+}
+.tree li
+{
+	margin:0px 0px 0px 5px;
+	padding:0px;
+	list-style-type:none;
+	text-align:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:13px;
+	font-weight:normal;
+}
+
+/* Submenu styles */
+.tree ul ul 
+{
+	background-color:#F6F6F6;
+}
+.tree li li
+{
+	margin:0px 0px 0px 16px;
+}
+
+/* Symbol styles */
+.tree .symbol-item,
+.tree .symbol-open,
+.tree .symbol-close
+{
+	float:left;
+	width:16px;
+	height:1em;
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.tree .symbol-item  { background-image:url(../ic/page.png); }
+.tree .symbol-close { background-image:url(../ic/plus.png);}
+.tree .symbol-open  { background-image:url(../ic/minus.png); }
+.tree .symbol-item.last  { }
+.tree .symbol-close.last { }
+.tree .symbol-open.last  { }
+
+/* Menu line styles */
+.tree li.item  { font-weight:normal; }
+.tree li.close { font-weight:normal; }
+.tree li.open  { font-weight:bold; }
+.tree li.item.last  { }
+.tree li.close.last { }
+.tree li.open.last  { }
+
+a.go:link, a.go:visited, a.go:active
+{
+	display:block;
+	height:26px;
+	width:100px;
+	background-color:#FFFFFF;
+	color:#333333;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+	text-decoration:none;
+	line-height:26px;
+	padding-right:30px;
+	background-image:url(go.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+a.go:hover
+{
+	text-decoration:none;
+	color:#488400;
+}
+
+.treeOnClick
+{
+	width:100%;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:13px;
+	margin:-5px 0px 0px -50px;
+	padding:0px  0px 0px 0px;
+}
+
+.page
+{
+	background-repeat:no-repeat;
+	background-image:url(../ic/page.png);
+	margin-left:-25px;
+}
+
+.treeOnClick .symbol-item
+{
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+.treeOnClick .symbol-item  { background-image: url(../ic/page.png); }
+
+.treeOnClick ul li
+{
+    width:230px;
+}

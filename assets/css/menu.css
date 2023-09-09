@@ -1,0 +1,211 @@
+#cssmenu ul {
+  margin: 0;
+  padding: 7px 6px 0;
+  /*background: #a8a4a1 url(images/overlay.png) repeat-x 0 -110px;*/
+  line-height: 100%;
+  border-radius: 1em;
+  font: Calibri;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border:1px #C0C0C0 solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all .2s ease-in-out;
+  width: 988px;
+}
+#cssmenu li {
+  margin: 0 5px;
+  padding: 0 0 8px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+#cssmenu a,
+#cssmenu a:link {
+  width:109px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #009;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+  margin: 0;
+  border:1px #C0C0C0 solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);*/
+}
+#cssmenu ul li ul a.parent {
+  background: url(images/submenu-pointer.png) no-repeat right bottom;
+}
+#cssmenu ul li ul a.parent span {
+  background:none; 
+}
+#cssmenu ul li ul a.parent:hover {
+  background: url(images/submenu-pointer.png) no-repeat right bottom;
+  background-color: #3c3c3c;
+}
+#cssmenu ul li ul a.parent:hover span {
+  background:none; 
+}
+
+#cssmenu a:hover {
+  background: #0C6;
+  color: #fff;
+}
+#cssmenu .active a{
+  background: #c1bebb url(images/overlay.png) repeat-x 0 -40px;
+  background: #666666 url(images/overlay.png) repeat-x 0 -40px;
+  color: #333;
+  /*border-top: solid 1px  #f8f8f8;*/
+  text-shadow: 0 1px 0 #ffffff;
+}
+#cssmenu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+#cssmenu li:hover > a {
+  background: #c1bebb url(images/overlay.png) repeat-x 0 -40px;
+  background: #666666 url(images/overlay.png) repeat-x 0 -40px;
+  color: #444;
+  /*border-top: solid 1px  #f8f8f8;*/
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 #ffffff;
+}
+#cssmenu ul ul li:hover a,
+#cssmenu li:hover li a {
+  width:158px;
+  background: none;
+  border: none;
+  padding: 4px 10px;
+  color: #666;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#cssmenu ul ul a:hover {
+  background: #a8a4a1 url(images/overlay.png) repeat-x 0 -100px !important;
+  color: #000 !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+#cssmenu li:hover > ul {
+  display: block;
+  z-index:110;
+}
+
+#cssmenu > ul > li:hover > ul {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+#cssmenu ul ul a {
+  color: #323232;
+  font-size: 13px;
+  background-color: #fafafa;
+  padding: 5px 8px 7px 16px;
+  display: block;
+  -webkit-transition: background-color 0.8s;
+  -moz-transition: background-color 0.8s;
+  -o-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+}
+#cssmenu > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent transparent #fafafa transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+
+#cssmenu ul ul {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  text-align:left;
+  z-index:497;
+  background-color:#fff;
+  border: solid 1px #999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+#cssmenu ul ul ul {
+    position:absolute;
+    top:-99999px;
+    left:100%;
+    opacity: 0;
+    transition: opacity .5s ease-in-out; /* Hide sub levels */
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    border-radius:6px;
+    border:1px solid #666;
+}
+#navigation ul li:hover>ul{ opacity: 1; position:absolute; top:99%; left:0; }
+#navigation ul ul li:hover>ul{ position:absolute; top:0; left:100%; opacity: 1; z-index:497; background:#333; }
+#cssmenu ul ul li {
+  float: none;
+  z-index:110;
+  margin: 0;
+  padding: 3px;
+}
+#cssmenu ul li ul ul {
+  float: none;
+  z-index:110;
+  margin: 0;
+  padding:20px 3px;
+}
+#cssmenu li ul li ul {
+  float: none;
+  left: 184px;
+  top: 0px;
+  margin:0;
+  padding:0px 3px;
+}
+#cssmenu ul li.last ul {
+  left: 300px;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: 300px;
+  right: 99.5%;
+}
+
+#cssmenu ul ul a,
+#cssmenu ul ul a:link {
+  font-weight: normal;
+  left: 300px;
+  font-size: 12px;
+}
+#cssmenu ul:after {
+  content: '.';
+  display: block;
+  z-index:110;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+* html #cssmenu ul {
+  height: 1%;
+}

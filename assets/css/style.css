@@ -1,0 +1,909 @@
+@charset "utf-8";
+body
+{
+	font-family:Calibri;
+	margin:0;
+	padding:0;
+}
+
+a{text-decoration:none; color:#09C;}
+a:hover{ color:#F63;}
+
+.line
+{
+	height:4px;
+	width:auto;
+	background:#f8f8f8;
+	margin-top:40px;
+}
+
+.plusminus
+{
+	cursor:pointer;
+}
+
+.clear
+{
+	clear:both;
+}
+
+#wrapper
+{
+	width:auto;
+	height:auto;
+}
+
+#content
+{
+	width:1000px;
+	height:auto;
+}
+
+#form_header
+{
+	width:990px;
+	height:40px;
+	border:solid 5px #999;
+	border-radius:5px;
+	background:#738990;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px 0px 0px 0px;
+	border-radius:5px;
+	float:left;
+}
+#pageheader
+{
+	font-size:22px;
+	color:#FFF; 
+	text-align:right; 
+	padding:6px 10px 0 0;
+}
+
+#addform
+{
+	border:solid 1px #CCC;
+	border-radius:7px;
+	margin-bottom:20px;
+	float:left;
+	width:auto;
+	min-width:1000px;
+}
+
+#addform_head
+{
+	width:990px;
+	height:25px;
+	background:#CCF;
+	font-size:18px;
+	color:#333;
+	padding:5px 0px 5px 10px;
+	text-align:left;
+	float:left;
+}
+
+#ajaxmenubox
+{
+	width:1000px; 
+	height:30px; 
+	background:#CCC; 
+	padding:5px 0 0 0; 
+	float:left;
+}
+
+.ajaxmenu_select
+{
+	width:auto;
+	height:30px; 
+	background:#FFF; 
+	border-radius:5px; 
+	padding-top:5px;
+	font-weight:bold;
+	cursor:pointer; 
+	text-shadow: 0 1px;
+	float:left;
+}
+
+.ajaxmenu
+{
+	width:auto;
+	height:30px; 
+	border-radius:5px; 
+	cursor:pointer; 
+	font-weight:bold;
+	padding-top:5px;
+	text-shadow: 0 1px;
+	float:left;
+}
+
+.ajaxinput_btn
+{
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+
+.table_box
+{
+	width:1000px;
+	text-align:left;
+	background:#f4f6f6;
+	border-radius:5px;
+	border:solid 1px #999;
+	float:left;
+}
+
+.inner_table_box
+{
+	width:630px;
+	text-align:left;
+	background:#f4f6f6;
+	border-radius:5px;
+	border:solid 1px #999;
+	float:left;
+}
+
+.table_boxnew
+{
+	text-align:left;
+	background:#f4f6f6;
+	border-radius:5px;
+	border:solid 1px #999;
+	color:#666;
+	float:left;
+}
+td
+{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.table_head
+{
+	background:#D9D9D9;
+	color:#000;
+	height:30px;
+	font-size:12px;
+	text-align:left;
+}
+
+.table_data
+{
+	background:#ebeeef;
+	height:30px;
+	font-size:14px;
+}
+
+.td_font
+{
+	font-size:13px;
+	font-weight:600;
+}
+td_font a{text-decoration:none; color:#09C; font-size:11px; font-weight:normal; }
+.td_font a:hover{ color:#F63;}
+.form_input
+{
+	border:solid 1px #CCC;
+	height:27px;
+	width:255px;
+	color:#666;
+ 	border-radius:5px;
+	padding-left:5px;
+	font-size:14px;
+	float:left;
+}
+
+.form_input1
+{
+	border:solid 1px #CCC;
+	height:27px;
+	width:100px;
+	color:#666;
+ 	border-radius:5px;
+	padding-left:5px;
+	font-size:14px;
+	float:left;
+}
+
+.form_button
+{
+	height:27px;
+	width: 80px;
+	font-size:14px;
+}
+
+#header_main
+{
+	width:  auto;
+	height: 295px;
+	box-shadow:0px 1px 4px rgba(0,0,0,0.1);
+}
+
+#header_main_page
+{
+	width:auto;
+	height:205px;
+	margin-top:0px;
+	box-shadow:0px 1px 10px rgba(0,0,0,0.2);
+}
+
+#header_box
+{
+	width:1000px;
+	height:232px;
+	background:url(../image/Baner.jpg) no-repeat;
+}
+
+.signout
+{
+	width:1000px;
+	height:20px;
+	text-align:right;
+	font-size:11px;
+}
+
+#logo
+{
+	width:250px;
+	height:60px;
+	padding:0px 0px 0px 0px;
+	float:left;
+}
+
+#login
+{
+	width:180px;
+	height:45px;
+	padding:10px 0px 0px 250px;
+	font-size:14px;
+	text-align:right;
+	color:#09C;
+	float:left;
+}
+
+#login_btn
+{
+	width:80px;
+	height:25px;
+	border-radius:5px;
+	text-align:center;
+	background:#09C;
+	padding:8px 0px 0px 0px;
+	border-radius:5px;
+	float:right;
+}
+#login_btn a{color:#FFF;}
+#login_btn a:hover{color:#F30; }
+
+#loginbox
+{
+	width:600px;
+	height:280px;
+	background:#FFF;
+	border:solid 8px #CCC;
+	border-radius:5px;
+	margin:40px 0px 0px 0px;
+	box-shadow:0px 1px 8px rgba(0,0,0,0.3);
+}
+
+#login_head
+{
+	width:580px;
+	height:30px;
+	color:#FFF;
+	font-size:20px;
+	text-align:left;
+	padding:10px 0px 10px 20px;
+	font-weight:bold;
+	background:#333;
+	float:left;
+}
+
+#login_logo
+{
+	width:250px;
+	height:200px;
+	margin-top:50px;
+	float:left;
+}
+
+#login_right
+{
+	width:280px;
+	height:180px;
+	margin-top:20px;
+	padding:0 0 0 40px;
+	float:left;
+}
+
+.login_text
+{
+	width:300px;
+	height:20px;
+	color:#999;
+	font-size:12px;
+	text-align:left;
+	font-weight:bold;
+	float:left;
+}
+
+.login_input
+{
+	width:260px;
+	height:40px;
+	text-align:left;
+	margin-bottom:5px;
+	float:left;
+}
+
+.login_input1
+{
+	text-align:left;
+	margin-bottom:5px;
+	float:left;
+}
+
+.login_submit
+{
+	width:auto;
+	height:25px;
+	border:solid 1px #06C;
+	border-radius:5px;
+	color:#FFF;
+	text-align:center;
+	background:#09C;
+	background-repeat:repeat;
+	background-position:0 200px;
+	padding:5px 0px 0px 0px;
+	margin:5px;
+	border-radius:5px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:right;
+}
+
+.login_submit1
+{
+	width:60px;
+	/*height:25px;*/
+	border:solid 1px #06C;
+	border-radius:5px;
+	color:#FFF;
+	text-align:center;
+	background:#09C;
+	background-repeat:repeat;
+	background-position:0 200px;
+	padding:3px 2px 5px 0px;
+	/*margin:5px;*/
+	border-radius:5px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:right;
+}
+
+.login_submitadd
+{
+	width:120px;
+	height:25px;
+	border:solid 1px #06C;
+	border-radius:5px;
+	color:#FFF;
+	text-align:center;
+	background:#09C;
+	background-position:0 200px;
+	padding:5px 0px 0px 0px;
+	margin:5px;
+	border-radius:5px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:right;
+}
+
+.login_submit a{color:#FFF;}
+.login_submit a:hover{color:#333;}
+
+.login_menu
+{
+	width:80px;
+	height:25px;
+	border:solid 1px #06C;
+	border-radius:5px;
+	color:#FFF;
+	text-align:center;
+	background:#09C;
+	background-repeat:repeat;
+	background-position:0 200px;
+	padding:5px 0px 0px 0px;
+	margin:5px;
+	border-radius:5px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:left;
+}
+
+.login_menu a{color:#FFF;}
+
+.login_menu a:hover{color:#333;}
+
+#btndiv
+{
+	width:1000px; 
+	height:40px;
+	background:#945b9a;
+	border-radius:7px; 
+	margin-top:2px; 
+	float:left;
+}
+
+.journal_input
+{
+	border:solid 1px #CCC;
+	height:27px;
+	width:210px;
+	color:#666;
+ 	border-radius:5px;
+	padding-left:5px;
+	font-size:14px;
+	float:left;
+}
+
+.btn_cmd
+{
+	border:none;
+	background:none;
+	cursor: pointer;
+	width:80px; height:20px; float:left;
+}
+/*-----------------------------------Start Form Data Loadd CSS----------------------------*/
+
+.employee_img
+{
+	height:40px;
+	width:50px;
+}
+
+.student_img
+{
+	height:50px;
+	width:50px;
+}
+
+.add_btn
+{
+	width:120px;
+	height:22px;
+	border:solid 1px #CCC;
+	border-radius:5px;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+	margin:5px;
+	font-weight:bold;
+	background:#3f667b;
+	background-repeat:repeat;
+	background-position:0 200px;
+	padding:8px 0px 0px 0px;
+	float:left;
+}
+
+.add_btn a{color:#FFF;}
+.add_btn a:hover{ color:#F96;}
+
+#newbtn
+{
+	width:120px;
+	height:22px;
+	border:solid 1px #CCC;
+	border-radius:5px;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+	margin:5px;
+	font-weight:bold;
+	background:#3f667b;
+	background-repeat:repeat;
+	background-position:0 200px;
+	padding:8px 0px 0px 0px;
+	float:left;
+}
+
+#newbtn a{color:#FFF;}
+#newbtn a:hover{ color:#F96;}
+
+#clearbtn
+{
+	width:120px;
+	height:22px;
+	border:solid 1px #CCC;
+	border-radius:5px;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+	margin:5px;
+	font-weight:bold;
+	background:#3f667b;
+	background-repeat:repeat;
+	background-position:0 200px;
+	padding:8px 0px 0px 0px;
+	float:left;
+}
+
+#clearbtn a{color:#FFF;}
+#clearbtn a:hover{ color:#F96;}
+
+.inputbox
+{
+	width:250px;
+	height:30px;
+	border:solid 1px #999;
+	padding: 0 0 0 5px;
+	border-radius:5px;
+	box-shadow:0px 1px 4px rgba(0,0,0,0.2);
+}
+
+.textarea
+{
+	height:100px;
+	width:250px;
+	border-radius:5px;
+	border:none;
+	border:solid 1px #CCC;
+	padding:5px 0 0 5px;
+}
+
+.checkboxs
+{
+	font-size:13px;
+	font-weight:bold;
+}
+
+#table_info
+{
+	width:970px;
+	float:left; 
+	margin:20px; 
+	color:#666;
+}
+
+.td_action
+{
+	width:80px;
+	text-align:center;
+}
+
+.td_status
+{
+	width:70px;
+	text-align:center;
+}
+
+.td_id
+{
+	width:45px;
+	text-align:center;
+}
+
+.btn_save
+{
+	background: url(../image/save.png); 
+	background-repeat:no-repeat; 
+	border:none; 
+	text-align:center; 
+	cursor:pointer;
+	width: 84px; 
+	height: 18p; 
+	background-color: transparent;
+}
+
+.btn_add
+{
+	background: url(../image/plus.png); 
+	background-repeat:no-repeat; 
+	border:none; 
+	text-align:right;
+	cursor:pointer;
+	width: 64px; 
+	height: 18p; 
+	background-color: transparent;
+}
+#btnsave
+{
+	background-color: rgba(0, 0, 0, 0);
+    background-image: url("../image/save.png") no-repeat;
+	border:none ; 
+	text-align:right; 
+	width: 64px; 
+	height: 18p; 
+	background-color: transparent;
+}
+
+#lefttable
+{
+	width:450px;
+	height:auto;
+	float:left;
+}
+
+#righttable
+{
+	width:520px;
+	height:auto;
+	margin-left:30px;
+	float:left;
+}
+
+#middle
+{
+	width:450px;
+	height:auto;
+	float:left;
+}
+
+.tree
+{
+	width:350px;
+	height:auto;
+	float:left;
+}
+/*-----------------------------------End Form Data Loadd CSS----------------------------*/
+
+#social
+{
+	width:250px;
+	height:55px;
+	float:left;
+}
+
+#menudiv
+{
+	width:1000px;
+	margin-top: 0px;
+	margin-left:0px;
+	text-align:center;
+}
+
+#bodycontent
+{
+	width:1000px;
+	min-height:450px;
+	margin:10px 0px 0px 0px;
+}
+
+.text_box
+{
+	width:450px;
+	margin:25px;
+	float:left;
+}
+
+.text_box1
+{
+	width:910px;
+	margin:25px;
+	color:#000;
+	padding:0px 20px 0px 20px;
+	text-align:justify;
+	border-radius:5px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:left;
+}
+
+.text_head
+{
+	width:430px;
+	height:30px;
+	border-radius:5px;
+	background:#09C;
+	text-align:left;
+	padding:10px 0px 0px 20px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:left;
+}
+
+.text_body
+{
+	width:420px;
+	height:320px;
+	color:#666;
+	text-align:justify;
+	padding:0px 20px 0px 10px;
+	border-radius:5px;
+	box-shadow:0px 1px 12px rgba(0,0,0,0.4);
+	float:left;
+}
+
+.bullet-list li
+{
+	padding-bottom:5px;
+}
+
+#footer_main
+{
+	width:auto;
+	height:50px;
+	/*background:#666;*/
+	box-shadow:1px 2px 5px rgba(0,0,0,0.5);
+}
+
+#footer
+{
+	width:1000px;
+	height:40px;
+}
+
+#footer_left
+{
+	width:700px;
+	height:25px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+	color:#333;
+	padding:15px 0px 0px 0px;
+	float:left;
+}
+
+#footer_right
+{
+	width:235px;
+	height:35px;
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	text-align:right;
+	padding:20px 0px 0px 0px;
+	float:left;
+}
+
+#powered_img
+{
+	width:65px;
+	font-size:10px;
+	color:#242424;
+	padding:5px 0px 0px 0px;
+	text-align:left;
+	float:left;
+}
+/*-------------------------------Welcome Panel Start--------------------------------------*/
+#totalbox
+{
+	width:1000px;
+	height:auto;
+	float:left;
+	margin:20px auto;
+}
+
+.iconbox
+{
+	width:230px;
+	height:140px;
+	float:left;
+	margin:15px 16px 5px 0;
+}
+
+.itembox
+{
+	width:176px;
+	height:20px;
+	float:left;
+	font-weight:bold;
+	color:#333;
+	padding:10px 0 10px 0;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+	background:#CCF;
+	margin:8px;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+.itembox:hover{background:#FF8C00; text-shadow: 0 1px 0 #000; zoom:3; color:#FFF; cursor:pointer;}
+
+.module_head
+{
+	font-size:24px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.icon_img
+{
+	width:220px;
+	height:60px;
+	float:left;
+}
+
+.icon_head
+{
+	width:220px;
+	height:10px;
+	text-align:center;
+	font-size:14px;
+	padding:10px 0 0 0;
+	font-weight:bold;
+	float:left;
+}
+
+.icon_tex
+{
+	width:150px;
+	height:40px;
+	text-align:justify;
+	font-size:12px;
+	padding-left:40px;
+	font-weight:bold;
+	float:left;
+}
+
+div .btnRoomdiv
+{
+	border: solid 1px #666;
+	background:#CCC;
+	color:#000;
+	width:100px;
+	height:30px;
+	border-radius:5px;
+}
+
+.btnRoom
+{
+	border:none;
+	background:none;
+	cursor:pointer;
+	width:100px;
+	height:30px;
+}
+
+.clearTextBox
+{
+	border:none;
+	background:none;
+	width:120px;
+}
+
+#ApproveNotification{
+	width: 500px;
+	border: orange solid 1px;
+	background: #FFF;
+	position:absolute;
+	right:200px;
+	z-index:200;
+	display:none;
+	border-radius:5px;
+}
+
+a:hover div#ApproveNotification
+{
+	display:block;
+}
+
+#HidePODetail
+{
+	width:500px;
+	background: #FFF;
+	position: absolute;
+	margin-top:-5px;
+	margin-left:10px;
+	display:none;
+	border:solid 1px #999 ;
+	border-radius: 5px;
+	color: #999;
+	cursor:pointer;
+}
+
+a:hover div#HidePODetail
+{
+	display:block;
+}
+
+
+p:hover div#HidePODetail
+{
+	display:block;
+}
+
+
+/* Loading Some Content*/
+
+/*-------------------------------Welcome Panel End--------------------------------------*/
+
+
+@media print {
+    tr.pagebreak {page-break-after: always;}
+}
+
+ 
